@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio Project</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class=" bg-black">
+
+    <!--Home-->
+
+    <div id="home">
+        <div class=" min-h-screen bg-cover" style="background-image: url(./images/background1.JPG);">
+            <nav  class=" top-0 w-full bg-black fixed flex rounded-lg justify-between z-50  ">
+                <h1 class="text-white  py-3 px-8 text-2xl font-bold hover:text-rose-600">
+                    <samp class=" font-bold font-serif text-4xl text-red-700  hover:text-white transition-colors ">K</samp><samp class=" text-white hover:text-red-700">ai</samp><samp class=" font-bold font-serif text-white text-4xl hover:text-red-700 ">F.</samp></h1>
+                <ul class=" inline-flex px-14 items-center min-h-full  space-x-10  text-white uppercase ">
+                    <li class=" hover:text-rose-600 hover:underline-offset-8 hover:underline hover:scale-110 duration-300"><a href="#home"> home</a></li>
+                    <li class=" hover:text-rose-600 hover:underline-offset-8 hover:underline hover:scale-110 duration-300"><a href="#about"> about</a></li>
+                    <li class=" hover:text-rose-600 hover:underline-offset-8 hover:underline hover:scale-110 duration-300"><a href="#"> servicrs</a></li>
+                    <li class=" hover:text-rose-600 hover:underline-offset-8 hover:underline hover:scale-110 duration-300"><a href="#contact"> contact</a></li>
+                </ul>
+            </nav>
+            <div class=" absolute text-white px-20 font-bold mt-44  py-20 ">
+                <h1 class="text-6xl px-14">Hi, I'm <samp class="  text-red-700  text-7xl font-sans">Md  Kaif </samp> <br> From India .</h1>
+                <span id="typewriter-text" class="px-14  text-2xl font-serif text-rose-600"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!--About -->
+    
+
+    <div id="about">
+        <div class=" min-h-screen bg-cover" style="background-image: url(./images/Picsart_24-10-08_17-14-34-366.jpg);">
+          <div class=" container mt-1 px-32 py-32 ">
+            <div>
+              <h1 class="text-gray-200 font-bold text-5xl">About Me</h1>
+              <p class="text-gray-300 mt-14 w-1/2">Hi, I'm Kaif, a passionate web developer with a knack for creating dynamic and responsive websites. With a strong foundation in HTML, CSS, TailwindCSS, and JavaScript, I specialize in building user-friendly interfaces and seamless user experiences.</p>
+            </div>
+
+          <!---->
+
+         <div class="  container flex space-x-20 mt-16">
+
+          <div>
+            <button class="accordion text-white outline-none   active:bg-gray-400 font-bold hover:scale-110 hover:underline hover:underline-offset-4 duration-300 sc"> Education</button>
+            <div class="panel  mt-5 text-white" id="edu">
+              <p>TMSL from Kolkata<br> <samp class=" font-serif text-pink-800">(2020-2023)</samp></p>
+            </div>
+          </div>
+          <div>
+            <button class="accordion text-white  outline-none  active:bg-gray-400 font-bold hover:scale-110 hover:underline hover:underline-offset-4 duration-300" > Expreiance</button>
+            <div class="panel  mt-5  font-serif text-pink-800" id="exp">
+              <p><samp>Freshers / learner</samp></p>
+            </div>
+          </div>
+          <div>
+            <button class="accordion text-white  outline-none active:bg-gray-400 font-bold hover:scale-110  hover:underline hover:underline-offset-4  duration-300" > Skills</button>    
+            <div class="panel mt-5  text-white" id="skills">
+              <p>
+                <!--skills-->
+                <div class=" max-2xl:w-60  rounded shadow-lg ">
+                  <div class=" border-b mt-2 mb-4">
+                  </div>
+                  <ul class=" border-x-zinc-800  ">
+                    <li class="skills-item">
+                      <div class="flex justify-between items-center mb-2">
+                        <h5 class="text-sm  font-serif ">HTML</h5>
+                        <data value="80" class="text-sm">90%</data>
+                      </div>
+                      <div class="bg-gray-200 rounded-full h-2">
+                        <div class="bg-pink-800 h-2 rounded-full" style="width: 90%;"></div>
+                      </div>
+                    </li>
+                    <li class="skills-item">
+                      <div class="flex justify-between items-center mb-2">
+                        <h5 class="text-sm font-serif ">CSS</h5>
+                        <data value="70" class="text-sm">80%</data>
+                      </div>
+                      <div class="bg-gray-200 rounded-full h-2">
+                        <div class="bg-pink-800 h-2 rounded-full" style="width: 80%;"></div>
+                      </div>
+                    </li>
+                    <li class="skills-item">
+                      <div class="flex justify-between items-center mb-2">
+                        <h5 class="text-sm  font-serif">Tailwind CSS</h5>
+                        <data value="90" class="text-sm">85%</data>
+                      </div>
+                      <div class="bg-gray-200 rounded-full h-2">
+                        <div class="bg-pink-800 h-2 rounded-full" style="width: 85%;"></div>
+                      </div>
+                    </li>
+                    <li class="skills-item ">
+                      <div class="flex justify-between items-center mb-2">
+                        <h5 class="text-sm  font-serif ">JavaScript</h5>
+                        <data value="85" class="text-sm">75%</data>
+                      </div>
+                      <div class="bg-gray-200 rounded-full h-2">
+                        <div class="bg-pink-800 h-2 rounded-full" style="width: 75%;"></div>
+                      </div>
+                    </li>
+                  </ul> 
+                </div>
+                <!--skills-->
+              </p>
+            </div>
+          </div>
+        </div>
+
+          <!---->
+
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+  <!--Contact Us-->
+
+  
+  <div class=" container mx-auto mt-10 text-white " id="contact">
+    <h1 class="text-4xl font-bold  text-center underline underline-offset-8  mb-10">  Contact Us  </h1>
+    <form class=" p-10   border rounded-3xl  shadow-2xl shadow-gray-700">
+      <div  class=" flex justify-between ">
+        <div class="mb-4"> 
+            <label for="name" class="block font-semibold text-white">Name :</label>
+            <input type="text" id="name" placeholder=" Enter Your Name" name="name" class="w-72 px-3 py-2  bg-black  border rounded-md ">
+        </div>
+        <div class="mb-4">
+            <label for="phone" class="block font-semibold text-white">Phone :</label>
+            <input type="text" id="phone" placeholder="Enter Your Phone Number" name="phone" class="w-72 px-3 py-2 bg-black border rounded-md">
+        </div>
+        <div class="mb-4">
+            <label for="email" class="block font-semibold text-white">Email Address :</label>
+            <input type="email" id="email" placeholder=" Enter Your Email Address" name="email" class="w-72 px-3 py-2  bg-black border rounded-md">
+        </div>
+      </div> 
+        <div class="mb-4">
+            <label for="message" class="block font-semibold text-white">Message :</label>
+            <textarea id="message" name="message" placeholder="Message" class="w-full px-3 py-2 text-black  bg-black border rounded"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 hover:scale-110 font-bold duration-300 text-gray-300 px-4 py-2 rounded-xl border shadow-md shadow-gray-500 hover:bg-blue-700 hover:text-white">Submit</button>
+    </form>
+    <div class="mt-8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.870217829377!2d-73.9776226845936!3d40.76435697932656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f9f8b8b8b1%3A0x8f8f8f8f8f8f8f8f!2sCentral%20Park!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus" width="550" height="250" style="border:0;" class=" rounded-xl" allowfullscreen="" loading="lazy"></iframe>
+        
+    </div>
+</div>
+
+  <script src="./portfolio.js"></script>
+  
+</body>
+</html>

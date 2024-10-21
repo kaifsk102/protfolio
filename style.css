@@ -1,0 +1,19 @@
+
+
+*{
+    margin-top: 0;
+    padding: 0;
+    font-family:'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+
+  
+  .accordion {
+    @apply bg-gray-200 text-gray-700 cursor-pointer p-4 w-full border-none text-left outline-none text-base transition duration-400;
+  }
+  .accordion:hover, .active {
+    @apply bg-gray-300;
+  }
+  .panel {
+    @apply p-4 hidden bg-white overflow-hidden;
+  }
