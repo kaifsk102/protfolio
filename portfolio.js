@@ -76,3 +76,4 @@ document.querySelector('form').addEventListener('submit', function(event) {
   const message = document.getElementById('message').value;
   console.log({ name, phone, email, message });
 });
+

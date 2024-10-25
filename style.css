@@ -9,11 +9,19 @@
 
   
   .accordion {
-    @apply bg-gray-200 text-gray-700 cursor-pointer p-4 w-full border-none text-left outline-none text-base transition duration-400;
+    @apply bg-gray-200 text-gray-600 cursor-pointer p-4 w-full border-none text-left outline-none text-base transition duration-400;
   }
   .accordion:hover, .active {
     @apply bg-gray-300;
   }
   .panel {
     @apply p-4 hidden bg-white overflow-hidden;
+  }
+
+
+
+  .nav-items:hover{
+    border-bottom: 3px solid #ae333d;
+    transition-duration: 0.5s;
+    transition-property: all;
   }
