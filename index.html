@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class=" scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +25,7 @@
                     <li class="nav-items hover:underline-offset-8  hover:scale-110 duration-300"><a href="#servicrs"> servicrs</a></li>
                     <li class="nav-items hover:underline-offset-8  hover:scale-110 duration-300"><a href="#contact"> contact</a></li>
                 </ul>
-                <div class=" text-white text-2xl inline-flex px-14 items-center min-h-full space-x-5">
+                <div class=" text-white text-xl inline-flex px-14 items-center min-h-full space-x-5">
                   <a href="https://www.facebook.com/mr.kaif.102"><i class="fa fa-facebook  w-8 h-8 text-center content-center rounded-full bg-blue-600 hover:scale-125 duration-300 "></i></a>
                   <a href="https://www.instagram.com/mr_kaif_102/?next=%2F"><i class="fa fa-instagram w-8 h-8 text-center content-center rounded-full bg-pink-600 hover:scale-125 duration-300"></i></a>
                   <a href="https://x.com/kaifsk102"><i class="fa fa-twitter w-8 h-8 text-center content-center rounded-full bg-blue-500 hover:scale-125 duration-300"></i></a>
@@ -147,37 +147,53 @@
             <p class=" font-serif font-bold text-gray-200">Email :<br><samp class=" font-serif font-extralight text-gray-300">kaifsk102@gmail.com</samp></p> 
           </div>
           <div class=" inline-flex  space-x-5">
-            <i class=" fa fa-address-book text-xl text-black  bg-white w-10 h-10 rounded-full  content-center text-center"></i>
+            <i class="  fa fa-address-book text-xl text-black  bg-white w-10 h-10 rounded-full  content-center text-center"></i>
             <p class=" font-serif font-bold text-gray-200">Address :<br><samp class=" font-serif font-extralight text-gray-300">Newtown , Kolkata , 700156 </samp></p> 
           </div> 
-          <div class=" mt-14 " >
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29564.887664515252!2d88.46503375811331!3d22.58243783293465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275350398a5b9%3A0x75e165b244323425!2sNewtown%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1729781338071!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="  rounded-3xl " referrerpolicy="no-referrer-when-downgrade"></iframe>
-           </div>      
+          
+          <div class=" py-6" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29564.887664515252!2d88.46503375811331!3d22.58243783293465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275350398a5b9%3A0x75e165b244323425!2sNewtown%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1729781338071!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="  rounded-3xl " referrerpolicy="no-referrer-when-downgrade"></iframe>  
+          </div>  
+              
         </div>
       <form class=" p-14 mt-5 border border-gray-700 rounded-xl w-4/5 h-5/6 shadow-2xl hover:shadow-sky-700 " >
     <div class=" flex  justify-between ">
-        <div class="mb-4"> 
-            <label for="name" class="block font-semibold text-white">Name :</label>
+        <div class="mb-4 space-y-3"> 
+            <label for="name" class="block font-semibold text-white">Name *</label>
             <input type="text" id="name" placeholder=" Enter Your Name" name="name" class=" w-72 px-4 py-6  bg-black  border border-gray-500 rounded-xl ">
         </div>
         
-        <div class="mb-4">
-            <label for="email" class="block font-semibold text-white">Email :</label>
+        <div class="mb-4 space-y-3">
+            <label for="email" class="block font-semibold text-white">Email *</label>
             <input type="email" id="email" placeholder=" Enter Your Email I'D" name="email" class=" w-72 px-4 py-6  bg-black border border-gray-500 rounded-xl">
         </div>
     </div> 
-        <div class="mb-4">
-            <label for="message" class="block font-semibold text-white">Message :</label>
+        <div class="mb-4 space-y-3">
+            <label for="message" class="block font-semibold text-white">Message *</label>
             <textarea id="message" name="message" placeholder="Message" rows="8" class="w-full px-4 py-5 text-black   bg-black border border-gray-500 rounded-2xl"></textarea>
         </div>
-        <button type="submit" class="bg-blue-500 hover:scale-110 font-bold duration-300 text-gray-300 px-4 py-5 rounded-xl border shadow-lg hover:shadow-sky-700 hover:bg-blue-700 hover:text-white">Send Message</button>
+        <button type="submit" class="bg-blue-500  hover:scale-110 font-bold duration-300 text-gray-300 px-3 py-3 rounded-xl border shadow-lg hover:shadow-sky-700 hover:bg-blue-700 hover:text-white">Send Message <samp class=" fa fa-send"></samp></button>
       </form>
     </div>
      
+    <footer class=" mt-20 mb-10 justify-center px-14 items-center flex space-x-5 text-white ">
+    <div class=" flex space-x-5 uppercase">
+        <li class="  hover:scale-110 duration-300"><a href="#home">home</a></li>
+        <li class="  hover:scale-110 duration-300"><a href="#about"> about</a></li>
+        <li class="  hover:scale-110 duration-300"><a href="#servicrs"> servicrs</a></li>
+        <li class="  hover:scale-110 duration-300"><a href="#contact"> contact</a></li>
+    </div>    
+    <div class=" text-black text-xl flex px-14 space-x-8">
+        <a href="https://www.facebook.com/mr.kaif.102"><i class="fa fa-facebook  w-8 h-8 text-center content-center rounded-full bg-white hover:scale-125 duration-300 "></i></a>
+        <a href="https://www.instagram.com/mr_kaif_102/?next=%2F"><i class="fa fa-instagram w-8 h-8 text-center content-center rounded-full bg-white hover:scale-125 duration-300"></i></a>
+        <a href="https://x.com/kaifsk102"><i class="fa fa-twitter w-8 h-8 text-center content-center rounded-full bg-white hover:scale-125 duration-300"></i></a>
+        <a href="https://github.com/kaifsk102"><i class="fa fa-github w-8 h-8 text-center content-center rounded-full bg-white hover:scale-125 duration-300"></i></a>
+        <a href="https://www.linkedin.com/in/md-kaif-sk-8b07a924b/"><i class="fa fa-linkedin w-8 h-8 text-center content-center rounded-full bg-white hover:scale-125  duration-300"></i></a>
+    </div>
+     
+    </footer>
+    <p class=" text-sm mb-5 text-center text-gray-400  font-extralight">&copy Md Kaif Sk . All rights reserved .</p>
 
-     <div>
-
-     </div>
 </div>
 
   <script src="./portfolio.js"></script>
