@@ -34,18 +34,32 @@ playTypingAnimation(typingTexts[0]);
 
 //Tab Links
 
-let tablinks = document.getElementsByClassName('tab-links');
-let tabcontents = document.getElementsByClassName('tab-contents');
+// let tablinks = document.getElementsByClassName('tab-links');
+// let tabcontents = document.getElementsByClassName('tab-contents');
 
-function opentab(tabname) {
-    for (let tablink of tablinks) {
-        tablink.classList.remove('active-link');
-    }
-    for (let tabcontent of tabcontents) {
-        tabcontent.classList.add('active-tab');
-    }
-    this.currentTarget.classList.add('active-link');
-    document.getElementById(tabname).classList.remove('active-tab');
+// function opentab(tabname) {
+//     for (let tablink of tablinks) {
+//         tablink.classList.remove('active-link');
+//     }
+//     for (let tabcontent of tabcontents) {
+//         tabcontent.classList.add('active-tab');
+//     }
+//     this.currentTarget.classList.add('active-link');
+//     document.getElementById(tabname).classList.remove('active-tab');
+// }
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
 
 
