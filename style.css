@@ -18,7 +18,7 @@
     @apply p-4 hidden bg-white overflow-hidden;
   }
   .tablinks.active {
-    border-bottom: 2px solid rgb(239, 36, 70);
+    border-bottom: 2px solid rgb(195, 18, 80);
     animation-duration: 0.5s;
     transition-property: all;
   }
