@@ -4,7 +4,7 @@ const typingAnimationElement = document.getElementById('typewriter-text');
 // Create an array of typing text
 const typingTexts = [
   'Student  ',
-  'Devoloper  ',
+  'Web Devoloper  ',
 ];
 
 // Create a function to display the typing animation for a given text
@@ -34,21 +34,9 @@ playTypingAnimation(typingTexts[0]);
 
 //Tab Links
 
-// let tablinks = document.getElementsByClassName('tab-links');
-// let tabcontents = document.getElementsByClassName('tab-contents');
 
-// function opentab(tabname) {
-//     for (let tablink of tablinks) {
-//         tablink.classList.remove('active-link');
-//     }
-//     for (let tabcontent of tabcontents) {
-//         tabcontent.classList.add('active-tab');
-//     }
-//     this.currentTarget.classList.add('active-link');
-//     document.getElementById(tabname).classList.remove('active-tab');
-// }
 
-function openCity(evt, cityName) {
+function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -58,7 +46,7 @@ function openCity(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
 
@@ -85,9 +73,8 @@ document.querySelectorAll('.accordion').forEach(button => {
 document.querySelector('form').addEventListener('submit', function(event) {
   event.preventDefault();
   const name = document.getElementById('name').value;
-  const phone = document.getElementById('phone').value;
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
-  console.log({ name, phone, email, message });
+  console.log({ name, email, message });
 });
 

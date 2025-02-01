@@ -1,3 +1,9 @@
+@media (max-width: 600px) {
+  body {
+      font-size: 14px;
+      padding: 2px;
+  }
+}
 
 
 *{
@@ -18,7 +24,7 @@
     @apply p-4 hidden bg-white overflow-hidden;
   }
   .tablinks.active {
-    border-bottom: 2px solid rgb(195, 18, 80);
+    border-bottom: 3px solid rgb(195, 18, 80);
     animation-duration: 0.5s;
     transition-property: all;
   }
