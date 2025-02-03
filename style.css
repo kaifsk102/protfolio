@@ -4,8 +4,14 @@
       padding: 2px;
   }
 }
+.drop-shadow-custom {
+filter: drop-shadow(1px 1px 50px #ff2d8b50);
+}
 
-
+@keyframes progressAnimation {
+  0% { width: 0%; }
+  100% { width: var(--progress-width); }
+}
 *{
     margin-top: 0;
     padding: 0;

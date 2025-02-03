@@ -3,8 +3,9 @@ const typingAnimationElement = document.getElementById('typewriter-text');
 
 // Create an array of typing text
 const typingTexts = [
-  'Student  ',
-  'Web Devoloper  ',
+  ' Web Developer ',
+  ' Programmer' ,
+  ' Tech Enthusiast  ',
 ];
 
 // Create a function to display the typing animation for a given text
@@ -76,5 +77,23 @@ document.querySelector('form').addEventListener('submit', function(event) {
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
   console.log({ name, email, message });
+});
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const progressBars = document.querySelectorAll('.progress-bar');
+
+  progressBars.forEach((bar, index) => {
+    
+    const dynamicWidth = [90, 80, 90, 80, 85, 80][index]; // Replace with your own dynamic logic
+
+    // Set custom property for animation
+    bar.style.setProperty('--progress-width', `${dynamicWidth}%`);
+    bar.style.width = `${dynamicWidth}%`;
+    bar.style.animation = 'progressAnimation 2s ease-in-out forwards';
+  });
 });
 
