@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   progressBars.forEach((bar, index) => {
     
-    const dynamicWidth = [90, 80, 90, 80, 85, 80][index]; // Replace with your own dynamic logic
+    const dynamicWidth = [90, 80, 90, 80, 85, 80, 75, 80, 80, 75][index]; // Replace with your own dynamic logic
 
     // Set custom property for animation
     bar.style.setProperty('--progress-width', `${dynamicWidth}%`);
@@ -97,3 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+
+
+
+
+const menuBtn = document.getElementById('menu-btn'); 
+const mobileMenu = document.getElementById('mobile-menu'); 
+menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden');
+ });

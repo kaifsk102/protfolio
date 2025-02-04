@@ -12,6 +12,19 @@ filter: drop-shadow(1px 1px 50px #ff2d8b50);
   0% { width: 0%; }
   100% { width: var(--progress-width); }
 }
+
+
+
+
+.menu-open {
+  animation: slideIn 0.5s ease-out forwards;
+}
+.hidden.menu-open {
+  animation: slideOut 0.5s ease-out forwards;
+}
+
+
+
 *{
     margin-top: 0;
     padding: 0;
